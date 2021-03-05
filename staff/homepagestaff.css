@@ -55,3 +55,11 @@ body {
     background-image: url(bg.jpg);
     background-size: cover;
 }
+
+.login_bt {
+    width: 200px;
+    height: 30px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
