@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Leave Request</title>
+    <link rel="stylesheet" href="requestleave.css">
+    <script src="requestleave.js"></script>
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <div class="leftnav">
+            <div class="navlink">
+                <a href="homepagestd.html">Attendens Percentage&nbsp;&nbsp;&nbsp;</a>
+            </div>
+
+            <div class="navlink">
+                <a href="requestleave.html"> request leave&nbsp;&nbsp;&nbsp;</a>
+            </div>
+            <div class="navlink">
+                <a href="example.html">Check acceptance&nbsp;&nbsp;&nbsp;</a>
+            </div>
+
+            <div class="navlink">
+                <a href="about.html"> About</a>
+            </div>
+        </div>
+
+        <div class="rightnav">
+            <div class="brand">
+                <div>
+                    <a href="login.html">
+                        <img src="images/profile.png" height="75" width="75"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <h1>Leave Request</h1>
+    <div class="fullpage">
+        <label>Name:</label>
+        <input type="text" id="name"></input><br><br>
+        <label>Rollno:</label>
+        <input type="text" id="rollno"></input><br><br>
+        <lable>purpose:</lable>
+        <input type="text" id="purpose"></input><br><br>
+        <label>From date:</label>
+        <input type="text" id="fr_date"></input><br><br>
+        <label>To date:</label>
+        <input type="text" id="to_date"></input><br><br>
+        <button class="submit_bt" onclick="submit()">Submit</button>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAtW6L-3K4E9X41R-QrzOioJroC6DaGHsM",
+            authDomain: "leavedatas.firebaseapp.com",
+            projectId: "leavedatas",
+            storageBucket: "leavedatas.appspot.com",
+            messagingSenderId: "281693279360",
+            appId: "1:281693279360:web:1b28fe255b13e49ce9c265",
+            measurementId: "G-GETP4FHB54"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+</body>
+
+
+</html>
