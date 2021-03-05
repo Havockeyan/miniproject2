@@ -9,6 +9,14 @@
     display: flex;
 }
 
+.login_bt {
+    width: 200px;
+    height: 30px;
+    color: rgb(229, 241, 229);
+    background-color: red;
+    cursor: pointer;
+}
+
 .nav>.leftnav>div {
     margin-right: 20px;
     font-size: 0.9em;
